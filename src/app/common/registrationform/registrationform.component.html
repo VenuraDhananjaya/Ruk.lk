@@ -1,0 +1,49 @@
+<button mdbBtn size="md" rounded="true" data-toggle="modal" (click)='registrationModal.show()' data-target="#buyerRegistrationForm" class="wave-light btncolor white-text" mdbWavesEffect>Register</button>
+
+<!--Registration form modal-->
+<div mdbModal #registrationModal='mdbModal' class="modal fade" id="buyerRegistrationForm" tabindex="-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-header text-center">
+         <h4 class="modal-title w-100 font-weight-bold">Buyer Registration</h4>
+         <button type="button" class="close pull-right" (click)="registrationModal.hide()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          
+          </div>
+          <div class="modal-body mx-3">
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="md-form mb-5">
+                      <input type="text" id='firstname' formControlName="firstnamefield" class="form-control validate" [form-control]="signupFormModalName" mdbInputDirective>
+                      <label for="firstnamefield">First Name</label>
+                    </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="md-form mb-5">
+                      <input type="text" id='secondname' formControlName="secondnamefield" class="form-control validate" [form-control]="signupFormModalName" mdbInputDirective>
+                      <label for="secondnamefield">Second Name</label>
+                    </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-6">
+                  <div class="md-form mb-5">
+                      <input type="password" id='password' formControlName="passwordfield" class="form-control validate" [form-control]="signupFormModalName" mdbInputDirective>
+                      <label for="passwordfield">Password</label>
+                    </div>
+              </div>
+              <div class="col-sm-6">
+                  <div class="md-form mb-5">
+                      <input type="password" id='re-password' formControlName="re-passwordfield" class="form-control validate" [form-control]="signupFormModalName" mdbInputDirective>
+                      <label for="re-passwordfield">Re-enter Password</label>
+                    </div>
+                </div>
+            </div>
+            
+            
+       </div>
+     </div> 
+   </div>
+</div>
