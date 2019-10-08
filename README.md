@@ -1,9 +1,10 @@
-# Ruklk
+# Ruk.lk
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
 ## Project Motivation
 Give support and encorage local farmers
+- Ruk.lk is mainly forcusing Sri lanken market :)
 
 ## Development server
 
